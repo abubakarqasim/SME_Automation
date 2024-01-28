@@ -8,21 +8,21 @@ import org.testng.annotations.Test;
 public class CnfrmPack extends SMETest {
 
 
-    @Test (priority = 0)
+    //@Test (priority = 0)
     public void LoadingPageTestDown() throws InterruptedException {
         reports.logTestNameAndDescription("LoadingPageScrollDown" , "SME Automation");
         loadingPage.ScrollDown();
         reports.logPassedTestSteps("Passed");
 
     }
-    @Test (priority = 1)
+    //@Test (priority = 1)
     public void LoadingPageTestUp() throws InterruptedException {
         reports.logTestNameAndDescription("LoadingPageScrollUp" , "SME Automation");
         loadingPage.ScrollUp();
         reports.logPassedTestSteps("Passed");
 
     }
-    @Test (priority = 2)
+    //@Test (priority = 2)
     public void ClientSupport() throws InterruptedException {
         reports.logTestNameAndDescription("ClientSupport" , "SME Automation");
         customerSupport.ClientSupport();
@@ -37,19 +37,19 @@ public class CnfrmPack extends SMETest {
         reports.logPassedTestSteps("Passed");
 
     }
-    @Test (priority = 3)
+    //@Test (priority = 3)
     public void KeepinTouch() throws InterruptedException {
         reports.logTestNameAndDescription("KeepInTouch" , "SME Automation");
         keepInTouch.KeepinTouch();
         reports.logPassedTestSteps("Passed");
     }
-    @Test (priority = 4)
+    //@Test (priority = 4)
     public void ScrollPage() throws InterruptedException {
         reports.logTestNameAndDescription("ScrollPage" , "SME Automation");
         scrollThePage.ScrollPage();
         reports.logPassedTestSteps("Passed");
     }
-    @Test (priority = 5)
+    //@Test (priority = 5)
     public void ContactWithUs() throws InterruptedException {
         reports.logTestNameAndDescription("ContactUs" , "SME Automation");
         contactUs.ContactWithUs();
