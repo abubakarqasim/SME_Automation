@@ -12,10 +12,10 @@ public class CheckEligibility {
 
     public void CheckEligibility()
     {
-        WebElement selectlocation = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[11]/div[2]/button"));
+        WebElement selectlocation = driver.findElement(By.id("eligibility_hiden_div"));
         selectlocation.click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();

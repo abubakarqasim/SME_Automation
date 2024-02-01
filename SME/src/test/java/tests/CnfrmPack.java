@@ -69,6 +69,13 @@ public class CnfrmPack extends SMETest {
         reports.logPassedTestSteps("Passed");
 
     }
+    @Test (priority = 8)
+    public void CheckEligibility() throws InterruptedException {
+        reports.logTestNameAndDescription("CheckEligility" , "SME Automation");
+        checkEligibility.CheckEligibility();
+        reports.logPassedTestSteps("Passed");
+
+    }
 
 
 }
