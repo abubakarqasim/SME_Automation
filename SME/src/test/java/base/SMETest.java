@@ -27,6 +27,8 @@ public class SMETest {
 
     protected CheckEligibility checkEligibility;
 
+    protected ProductsServices productsServices;
+
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
@@ -41,6 +43,7 @@ public class SMETest {
         contactUs = new ContactUs(driver);
         selectLocation = new SelectLocation(driver);
         checkEligibility = new CheckEligibility(driver);
+        productsServices = new ProductsServices(driver);
         driver.manage().window().fullscreen();
         driver.get("https://sme-web-portal-qa.mvola.mg/#/sales");
 //        driver.manage().window().fullscreen();
