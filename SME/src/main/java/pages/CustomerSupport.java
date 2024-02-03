@@ -106,7 +106,7 @@ public class CustomerSupport {
         WebElement clickok = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/div[2]/button"));
         clickok.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
