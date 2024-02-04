@@ -68,7 +68,7 @@ public class ContactUs {
             e.getStackTrace();
         }
         WebElement entercontactname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-contact-us/div[2]/div/div[3]/div[1]/form/div/div[3]/div/input"));
-        entercontactname.sendKeys("Abubakar Qasim");
+        entercontactname.sendKeys("Areej Fatima");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -100,7 +100,7 @@ public class ContactUs {
             e.getStackTrace();
         }
         WebElement sendemail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-contact-us/div[2]/div/div[3]/div[1]/form/div/div[5]/div/input"));
-        sendemail.sendKeys("abubakarqasim2518@gmail.com");
+        sendemail.sendKeys("areejfatima2518@gmail.com");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

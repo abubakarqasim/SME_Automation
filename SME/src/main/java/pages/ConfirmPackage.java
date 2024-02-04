@@ -192,7 +192,7 @@ public class ConfirmPackage {
 
         WebElement enterfirstname = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[1]/div/input"));
-        enterfirstname.sendKeys("Abubakar");
+        enterfirstname.sendKeys("Areej");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -212,7 +212,7 @@ public class ConfirmPackage {
 
         WebElement enterlastname = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[2]/div/input"));
-        enterlastname.sendKeys("Qasim");
+        enterlastname.sendKeys("Fatima");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -252,7 +252,7 @@ public class ConfirmPackage {
 
         WebElement sendemail = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[4]/div/input"));
-        sendemail.sendKeys("abakarrkuij@gmail.com");
+        sendemail.sendKeys("areejfatima1298@gmail.com");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

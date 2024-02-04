@@ -317,7 +317,7 @@ public class ConfigureYourSolution {
         }
 
         WebElement enterthename = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
-        enterthename.sendKeys("Abubakar");
+        enterthename.sendKeys("Areej");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -335,7 +335,7 @@ public class ConfigureYourSolution {
         }
 
         WebElement enterthelname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
-        enterthelname.sendKeys("Abubakar");
+        enterthelname.sendKeys("Areej");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -371,7 +371,7 @@ public class ConfigureYourSolution {
         }
 
         WebElement entertheemail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
-        entertheemail.sendKeys("abubakar908@gmail.com");
+        entertheemail.sendKeys("areejfatima908@gmail.com");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {

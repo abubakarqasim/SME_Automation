@@ -32,7 +32,7 @@ public class CustomerSupport {
             e.getStackTrace();
         }
         WebElement entername = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
-        entername.sendKeys("Abubakar");
+        entername.sendKeys("Areej");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -48,7 +48,7 @@ public class CustomerSupport {
             e.getStackTrace();
         }
         WebElement enterlastname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
-        enterlastname.sendKeys("Qasim");
+        enterlastname.sendKeys("Fatima");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -80,7 +80,7 @@ public class CustomerSupport {
             e.getStackTrace();
         }
         WebElement enteremail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
-        enteremail.sendKeys("abubakarqasim2518@gmail.com");
+        enteremail.sendKeys("areejfatima2518@gmail.com");
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

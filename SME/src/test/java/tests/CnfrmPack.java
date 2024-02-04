@@ -62,21 +62,21 @@ public class CnfrmPack extends SMETest {
 
     @Test (priority = 7)
     public void SolutionConfiguration() throws InterruptedException {
-        reports.logTestNameAndDescription("Configure Solution" , "SME Automation");
+        reports.logTestNameAndDescription("Configure Your Solution" , "SME Automation");
         configureYourSolution.SolutionConfiguration();
         reports.logPassedTestSteps("Passed");
     }
 
     @Test (priority = 8)
     public void ContractPreview() throws InterruptedException {
-        reports.logTestNameAndDescription("Configure Solution" , "SME Automation");
+        reports.logTestNameAndDescription("Contract Preview & Download" , "SME Automation");
         configureYourSolution.ContractPreview();
         reports.logPassedTestSteps("Passed");
     }
 
     @Test (priority = 9)
     public void DownloadContact() throws InterruptedException {
-        reports.logTestNameAndDescription("Configure Solution" , "SME Automation");
+        reports.logTestNameAndDescription("Package Configuration Confirmation" , "SME Automation");
         configureYourSolution.DownloadContact();
         reports.logPassedTestSteps("Passed");
     }
