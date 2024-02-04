@@ -30,6 +30,7 @@ public class SMETest {
     protected ProductsServices productsServices;
     protected ProductsServicesScroll productsServicesScroll;
     protected ConfigureYourSolution configureYourSolution;
+    protected FAQs faQs;
 
     @BeforeClass
     public void setUp() {
@@ -48,6 +49,8 @@ public class SMETest {
         productsServices = new ProductsServices(driver);
         productsServicesScroll = new ProductsServicesScroll(driver);
         configureYourSolution = new ConfigureYourSolution(driver);
+        faQs = new FAQs(driver);
+
         driver.manage().window().fullscreen();
         driver.get("https://sme-web-portal-qa.mvola.mg/#/sales");
 //        driver.manage().window().fullscreen();
@@ -61,3 +64,5 @@ public class SMETest {
         driver.quit();
     }
 }
+
+

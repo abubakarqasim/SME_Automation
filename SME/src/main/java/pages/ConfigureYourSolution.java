@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ConfigureYourSolution {
+
     WebDriver driver;
     JavascriptExecutor scroller;
     public ConfigureYourSolution( WebDriver driver) {
@@ -13,15 +14,16 @@ public class ConfigureYourSolution {
         scroller = ((JavascriptExecutor) driver);
     }
 
-    public void ConfigureSolution() throws InterruptedException {
-        Thread.sleep(3000);
+//    public void ConfigureSolution() throws InterruptedException {
+//        Thread.sleep(3000);
+//
+//        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+//        Thread.sleep(3000);
+//    }
 
+    public void SolutionConfiguration() throws InterruptedException {
         scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-        Thread.sleep(3000);
-    }
-
-    public void SolutionConfiguration()
-    {
+        Thread.sleep(5000);
         WebElement ValidateBox = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-preview-your-package/div/div/div[2]/div/div[3]/div/div[3]/div[4]/div[2]/button"));
         ValidateBox.click();
         try {
@@ -30,6 +32,9 @@ public class ConfigureYourSolution {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
+        Thread.sleep(2500);
+        scroller.executeScript("window.scrollTo(0, 400);");
+        Thread.sleep(2500);
         WebElement ClickCIN = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-user/div/div/div[2]/div/div[3]/div/div[2]/form/div/div[1]/div[3]/div/input"));
         ClickCIN.click();
         try {
@@ -94,6 +99,9 @@ public class ConfigureYourSolution {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
+        Thread.sleep(1000);
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Thread.sleep(1000);
         WebElement clickpassword = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-user/div/div/div[2]/div/div[3]/div/div[2]/form/div/div[1]/div[9]/div/div[1]/input"));
         clickpassword.click();
         try {
@@ -134,6 +142,11 @@ public class ConfigureYourSolution {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
+        Thread.sleep(5000);
+        scroller.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
+        Thread.sleep(2000);
+        scroller.executeScript("window.scrollTo(0, 600);");
+        Thread.sleep(5000);
         WebElement clickbusinesstype = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-user/div/div/div[2]/div/div[3]/div/div[2]/form/div/div[1]/div[2]/div/input"));
         clickbusinesstype.click();
         try {
@@ -288,94 +301,105 @@ public class ConfigureYourSolution {
         WebElement clickconnect = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/div/label[2]"));
         clickconnect.click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
 
-        WebElement clickname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
-        clickname.click();
+        WebElement clickonname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
+        clickonname.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement entername = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
-        entername.sendKeys("Abubakar");
+
+        WebElement enterthename = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[1]/input"));
+        enterthename.sendKeys("Abubakar");
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement clicklastname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
-        clicklastname.click();
+
+        WebElement clickonlname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
+        clickonlname.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement enterlastname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
-        enterlastname.sendKeys("Qasim");
+
+        WebElement enterthelname = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[2]/input"));
+        enterthelname.sendKeys("Abubakar");
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement clicknumber = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[3]/input"));
-        clicknumber.click();
+
+        WebElement clickontel = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[3]/input"));
+        clickontel.click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement enternumber = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[3]/input"));
-        enternumber.sendKeys("0387820827");
+
+        WebElement enterthetel = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[3]/input"));
+        enterthetel.sendKeys("0387820827");
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement clickemail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
-        clickemail.click();
+
+        WebElement clickonemail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
+        clickonemail.click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement enteremail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
-        enteremail.sendKeys("abubakarqasim2518@gmail.com");
+
+        WebElement entertheemail = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[4]/input"));
+        entertheemail.sendKeys("abubakar908@gmail.com");
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement selectlang = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[1]/div[3]/div/div[5]/div/div[2]/p-radiobutton/div/div[2]"));
-        selectlang.click();
+
+        WebElement clickonnext = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-payment-method/div/div/div[2]/div/div[3]/div/div[1]/div/div/p-tabview/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[2]/button"));
+        clickonnext.click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-        WebElement clicknext1 = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/p-tabview/div/div[2]/p-tabpanel[1]/div/div[2]/button[2]"));
-        clicknext1.click();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
-            e.getStackTrace();
-        }
-        WebElement clickok = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/p-dialog/div/div/div[2]/div[2]/button"));
-        clickok.click();
+    }
+
+    public void ContractPreview() throws InterruptedException {
+        Thread.sleep(3000);
+
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Thread.sleep(3000);
+    }
+
+    public void DownloadContact()
+    {
+        WebElement clickontonext = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-user/div/div/div[2]/div/div[3]/div/div[2]/div/div[3]/button"));
+        clickontonext.click();
         try {
             Thread.sleep(10000);
         } catch (InterruptedException e) {
@@ -383,10 +407,25 @@ public class ConfigureYourSolution {
             e.getStackTrace();
         }
 
+        WebElement clickoncnfrm = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-user/div/div/div[2]/div/div[3]/div/div[3]/app-payment-receipt/div[4]/div[2]/button"));
+        clickoncnfrm.click();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.getStackTrace();
+        }
 
-
-
+        WebElement selfcare = driver.findElement(By.xpath("/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-congratulations/div/div/div/div/div[3]/div/div/div[2]/div/button"));
+        selfcare.click();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.getStackTrace();
+        }
     }
+
 
 
 }
