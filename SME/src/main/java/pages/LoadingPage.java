@@ -14,17 +14,17 @@ public class LoadingPage {
 
     }
 
-    public  void ScrollDown() throws InterruptedException {
+    public  void LandingPage() throws InterruptedException {
         Thread.sleep(10000);
 
+        scroller.executeScript("window.scrollTo(0, 300);");
+        Thread.sleep(2000);
         scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-        Thread.sleep(10000);
-
-    }
-    public  void ScrollUp() throws InterruptedException {
-        Thread.sleep(10000);
+        Thread.sleep(2000);
+        Thread.sleep(1000);
+        scroller.executeScript("window.scrollTo(0, -300);");
+        Thread.sleep(2000);
         scroller.executeScript("window.scrollTo(0, -document.body.scrollHeight);");
-        Thread.sleep(10000);
+        Thread.sleep(7000);
     }
-
 }

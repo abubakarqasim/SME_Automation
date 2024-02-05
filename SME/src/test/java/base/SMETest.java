@@ -25,6 +25,13 @@ public class SMETest {
     protected ContactUs contactUs;
     protected SelectLocation selectLocation;
 
+    protected CheckEligibility checkEligibility;
+
+    protected ProductsServices productsServices;
+    protected ProductsServicesScroll productsServicesScroll;
+    protected ConfigureYourSolution configureYourSolution;
+    protected FAQs faQs;
+
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
@@ -38,6 +45,12 @@ public class SMETest {
         scrollThePage = new ScrollThePage(driver);
         contactUs = new ContactUs(driver);
         selectLocation = new SelectLocation(driver);
+        checkEligibility = new CheckEligibility(driver);
+        productsServices = new ProductsServices(driver);
+        productsServicesScroll = new ProductsServicesScroll(driver);
+        configureYourSolution = new ConfigureYourSolution(driver);
+        faQs = new FAQs(driver);
+
         driver.manage().window().fullscreen();
         driver.get("https://sme-web-portal-qa.mvola.mg/#/sales");
 //        driver.manage().window().fullscreen();
@@ -51,3 +64,5 @@ public class SMETest {
         driver.quit();
     }
 }
+
+

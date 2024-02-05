@@ -1,15 +1,18 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ConfirmPackage {
 
     WebDriver driver;
+    JavascriptExecutor scroller;
 
     public ConfirmPackage(WebDriver driver) {
         this.driver = driver;
+        scroller = ((JavascriptExecutor) driver);
     }
 
     public void ConfirmPack() throws InterruptedException {
@@ -30,18 +33,20 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div/label[1]/div[1]"));
         idiscover.click();
         try {
-            Thread.sleep(10000);
+            Thread.sleep(15000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-//     
-
+//        scroller.executeScript("window.scrollTo(0, d);");
+        scroller.executeScript("window.scrollTo(0, 300);");
+        Thread.sleep(2000);
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         WebElement manufacturing = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[1]/div[1]/label[1]/p"));
         manufacturing.click();
         try {
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -66,7 +71,7 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-//        suivant1.click();
+
 
         WebElement fixedlinecon = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[3]/div/label[1]/div[1]"));
@@ -87,16 +92,23 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-
+//        scroller.executeScript("window.scrollTo(0, 300);");
+//        Thread.sleep(3000);
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         WebElement emailing = driver.findElement(By.xpath(
-                "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[5]/div[1]/label[1]/div[1]"));
+                "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div[1]/div/div[2]/div/div[3]/div/div[2]/div[5]/div[1]/label[6]/div[1]"));
         emailing.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Thread.sleep(5000);
+//        scroller.executeScript("window.scrollTo(0, 300);");
+//        Thread.sleep(3000);
+//        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
 
         WebElement suivant2 = driver
                 .findElement(By.cssSelector("#content_0_4 > div.text-center.mt-5.ng-star-inserted > button"));
@@ -117,7 +129,7 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-
+//
         WebElement mobilefeet = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[7]/div/label[1]/div[1]"));
         mobilefeet.click();
@@ -127,7 +139,7 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-
+//
         WebElement mailaddress = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[8]/div[1]/label[2]/div[1]"));
         mailaddress.click();
@@ -137,7 +149,7 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-
+//
         WebElement suivant3 = driver
                 .findElement(By.cssSelector("#content_1_0 > div.text-center.mt-5.ng-star-inserted > button"));
         suivant3.click();
@@ -167,12 +179,12 @@ public class ConfirmPackage {
             // TODO Auto-generated catch block
             e.getStackTrace();
         }
-
+//
         WebElement clickfirstname = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[1]/div/input"));
         clickfirstname.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -180,9 +192,9 @@ public class ConfirmPackage {
 
         WebElement enterfirstname = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[1]/div/input"));
-        enterfirstname.sendKeys("Abubakar");
+        enterfirstname.sendKeys("Areej");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -192,7 +204,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[2]/div/input"));
         clicklastname.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -200,9 +212,9 @@ public class ConfirmPackage {
 
         WebElement enterlastname = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[2]/div/input"));
-        enterlastname.sendKeys("Qasim");
+        enterlastname.sendKeys("Fatima");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -212,7 +224,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[3]/div/input"));
         clickbusinessname.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -222,7 +234,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[3]/div/input"));
         sendbusinessname.sendKeys("abc");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -232,7 +244,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[4]/div/input"));
         clickemail.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -240,9 +252,9 @@ public class ConfirmPackage {
 
         WebElement sendemail = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[4]/div/input"));
-        sendemail.sendKeys("abakar001@gmail.com");
+        sendemail.sendKeys("areejfatima1298@gmail.com");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -252,7 +264,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[5]/div/input"));
         clicknumber.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -262,7 +274,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[5]/div/input"));
         sendnumber.sendKeys("0344889918");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -272,7 +284,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[6]/div/input"));
         clickaddress.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -282,7 +294,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[6]/div/input"));
         sendaddress.sendKeys("Islamabad XYZ");
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -291,7 +303,7 @@ public class ConfirmPackage {
         WebElement clicknextform = driver.findElement(By.cssSelector("#content_3_0 > div.text-center.mt-5 > button"));
         clicknextform.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -309,7 +321,7 @@ public class ConfirmPackage {
 
         WebElement sendlocation = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[11]/app-locations-map/div[1]/div[1]/div/div/input"));
-        sendlocation.sendKeys("3FCX+3CF, Antananarivo, Madagascar");
+        sendlocation.sendKeys("3FCX+3CF, Antananarivo, Madagascar7");
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -317,8 +329,10 @@ public class ConfirmPackage {
             e.getStackTrace();
         }
 
+        Thread.sleep(3000);
 
-
+        scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Thread.sleep(3000);
     }
 }
 
