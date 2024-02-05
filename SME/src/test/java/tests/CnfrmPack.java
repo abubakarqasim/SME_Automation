@@ -8,67 +8,84 @@ import org.testng.annotations.Test;
 public class CnfrmPack extends SMETest {
 
 
-    //@Test (priority = 0)
+    @Test (priority = 0)
     public void LoadingPageTestDown() throws InterruptedException {
-        reports.logTestNameAndDescription("LoadingPageScrollDown" , "SME Automation");
-        loadingPage.ScrollDown();
+        reports.logTestNameAndDescription("Landing Page SME" , "SME Automation");
+        loadingPage.LandingPage();
         reports.logPassedTestSteps("Passed");
-
     }
-    //@Test (priority = 1)
-    public void LoadingPageTestUp() throws InterruptedException {
-        reports.logTestNameAndDescription("LoadingPageScrollUp" , "SME Automation");
-        loadingPage.ScrollUp();
+
+    @Test (priority = 1)
+    public void ProductandServices() throws InterruptedException {
+        reports.logTestNameAndDescription("Product's & Services" , "SME Automation");
+        productsServices.ProductandServices();
         reports.logPassedTestSteps("Passed");
-
     }
-    //@Test (priority = 2)
+
+    @Test (priority = 2)
+    public void FAQsSection() throws InterruptedException {
+        reports.logTestNameAndDescription("FAQ Section" , "SME Automation");
+        faQs.FAQsSection();
+        reports.logPassedTestSteps("Passed");
+    }
+
+    @Test (priority = 3)
     public void ClientSupport() throws InterruptedException {
-        reports.logTestNameAndDescription("ClientSupport" , "SME Automation");
+        reports.logTestNameAndDescription("Customer Support" , "SME Automation");
         customerSupport.ClientSupport();
         reports.logPassedTestSteps("Passed");
-
     }
 
-    //@Test (priority = 2)
-    public void SMEChat() throws InterruptedException {
-        reports.logTestNameAndDescription("SMEChatBot" , "SME Automation");
-        smeChatBot.SMEChat();
-        reports.logPassedTestSteps("Passed");
-
-    }
-    //@Test (priority = 3)
-    public void KeepinTouch() throws InterruptedException {
-        reports.logTestNameAndDescription("KeepInTouch" , "SME Automation");
-        keepInTouch.KeepinTouch();
-        reports.logPassedTestSteps("Passed");
-    }
-    //@Test (priority = 4)
-    public void ScrollPage() throws InterruptedException {
-        reports.logTestNameAndDescription("ScrollPage" , "SME Automation");
-        scrollThePage.ScrollPage();
-        reports.logPassedTestSteps("Passed");
-    }
-    //@Test (priority = 5)
+    @Test (priority = 4)
     public void ContactWithUs() throws InterruptedException {
-        reports.logTestNameAndDescription("ContactUs" , "SME Automation");
+        reports.logTestNameAndDescription("Contact Us" , "SME Automation");
         contactUs.ContactWithUs();
         reports.logPassedTestSteps("Passed");
     }
-    @Test (priority = 6)
+
+    @Test (priority = 5)
     public void confirmPageTest() throws InterruptedException {
-        reports.logTestNameAndDescription("ConfirmPackage" , "SME Automation");
+        reports.logTestNameAndDescription("Package Configuration" , "SME Automation");
         confirmPackage.ConfirmPack();
         reports.logPassedTestSteps("Passed");
 
     }
-    @Test (priority = 7)
-    public void LocationSeletion() throws InterruptedException {
-        reports.logTestNameAndDescription("SelectLocation" , "SME Automation");
-        selectLocation.LocationSeletion();
+
+    @Test (priority = 6)
+    public void CheckEligibility() throws InterruptedException {
+        reports.logTestNameAndDescription("Check Service Eligibility" , "SME Automation");
+        checkEligibility.CheckEligibility();
         reports.logPassedTestSteps("Passed");
 
+
     }
+
+    @Test (priority = 7)
+    public void SolutionConfiguration() throws InterruptedException {
+        reports.logTestNameAndDescription("Register Yourself" , "SME Automation");
+        configureYourSolution.SolutionConfiguration();
+        reports.logPassedTestSteps("Passed");
+    }
+
+    @Test (priority = 8)
+    public void ContractPreview() throws InterruptedException {
+        reports.logTestNameAndDescription("Contract Preview & Download" , "SME Automation");
+        configureYourSolution.ContractPreview();
+        reports.logPassedTestSteps("Passed");
+    }
+
+    @Test (priority = 9)
+    public void DownloadContact() throws InterruptedException {
+        reports.logTestNameAndDescription("Package Configuration Confirmation" , "SME Automation");
+        configureYourSolution.DownloadContact();
+        reports.logPassedTestSteps("Passed");
+    }
+
+
+
+
+
+
 
 
 }
