@@ -33,7 +33,7 @@ public class ConfirmPackage {
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div/label[1]/div[1]"));
         idiscover.click();
         try {
-            Thread.sleep(15000);
+            Thread.sleep(9000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.getStackTrace();
@@ -43,7 +43,7 @@ public class ConfirmPackage {
         Thread.sleep(2000);
         scroller.executeScript("window.scrollTo(0, document.body.scrollHeight);");
         WebElement manufacturing = driver.findElement(By.xpath(
-                "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[1]/div[1]/label[1]/p"));
+                "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div[1]/div/div[2]/div/div[3]/div/div[2]/div[1]/div[1]/label[1]/p"));
         manufacturing.click();
         try {
             Thread.sleep(5000);
@@ -252,7 +252,7 @@ public class ConfirmPackage {
 
         WebElement sendemail = driver.findElement(By.xpath(
                 "/html/body/app-root/app-landing-layout/div/div[2]/div[1]/app-configure-your-package/div/div/div[2]/div/div[3]/div/div[2]/div[10]/div[1]/div/form/div/div[4]/div/input"));
-        sendemail.sendKeys("areejfatima1298@gmail.com");
+        sendemail.sendKeys("areejfatima00001@gmail.com");
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
